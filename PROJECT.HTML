@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment10</title>
+   <style>
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #FBFAFE;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.logo {
+    font-size: 30px;
+    color: #1D2830;
+}
+
+.menu {
+    text-align: center;
+    background: #FBFAFE;
+    opacity: 1;
+
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+li {
+    list-style: none;
+    color: #35414B;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+
+}
+
+.nav {
+    display: none;
+}
+
+.login_btn {
+    color: #35414B;
+}
+
+.getstart_btn button {
+    color: #794CFF;
+    background: #ECE5FF;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.save {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.save_text {
+    background-color: #81C43B;
+    border-radius: 40px;
+    padding: 15px 20px;
+    display: none;
+
+}
+
+.get_account {
+    background-color: #F2F9EB;
+    border-radius: 40px;
+    padding: 15px 20px;
+
+}
+
+.info {
+    text-align: center;
+}
+
+.info_text_1 {
+    font-size: 64px
+}
+
+.descreaption {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.des_text {
+    text-align: center;
+    width: 100%;
+
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email_text {
+    border: 1px solid gray;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.try_it {
+    padding: 20px 90px;
+    background-color: #794CFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+
+
+}
+
+.dashboard img {
+    width: 100%;
+}
+
+.dashboard {
+    width: 100%;
+    text-align: center;
+}
+
+.dash_main {
+    display: flex;
+    justify-content: center;
+    background-color: #FBFAFE;
+}
+
+.trust_text {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.time_line {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.box {
+    margin-left: 20px;
+}
+
+.time_left {
+    width: 50%;
+}
+
+.compny_logo {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.time_top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.box_1 {
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.tab_text_2 {
+    margin-bottom: 20px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.border-side {
+    border-left: 1px solid gray;
+    height: 290px;
+}
+
+.border {
+    border: 1.5px solid gray;
+    width: 60%;
+    border-radius: 5px;
+
+}
+
+.time_text {
+    margin: 15px 0px 15px 78px;
+    font-size: 20px;
+    color: #4E5A65;
+}
+
+
+
+.lady {
+    display: flex;
+    align-items: center;
+}
+
+.time_bottom {
+    border: 1.5px solid gray;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-color: white;
+}
+
+.lady_text {
+    margin-left: 20px;
+}
+
+.paragraph {
+    border: 1.5px solid gainsboro;
+    padding: 20px;
+    width: 330px;
+    height: 200px;
+}
+
+.five1 {
+    padding: 15px;
+    background-color: #F6F3FC;
+    border-left: 8px solid #794CFF;
+    margin-top: 20px;
+}
+
+.five2 {
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.mek_work {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card_2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.show_more {
+    display: none;
+}
+
+.we_work {
+    background-color: #ECE5FF;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    margin-top: 30px;
+}
+
+.work_text button {
+    background-color: #794CFF;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.work_text h1 {
+    margin-bottom: 20px;
+    font-size: 40px !important;
+}
+
+.work_text div {
+    margin-bottom: 20px;
+    color: #4E5A65;
+}
+
+.heading {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.love_text {
+    text-align: center;
+    font-size: 20px;
+}
+
+.owl {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.brdr {
+    border-top: 3px solid #4E5A65;
+    padding-top: 10px;
+}
+
+.customer_love {
+    margin-bottom: 30px;
+}
+
+.owl_1 {
+    display: flex;
+    align-items: center;
+}
+
+.owl_2 {
+    display: flex;
+    align-items: center;
+}
+
+.for_mergin {
+    margin-left: 10px;
+}
+
+.playstore {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.play_inner {
+    width: 80%;
+    background-color: #794CFF;
+    padding: 30px 30px;
+    border-radius: 10px;
+    font-size: 34px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer {
+    background-color: #1D2830;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.head_li li {
+    color: white !important;
+}
+
+.list_ul {
+    display: block !important;
+}
+
+.head_li {
+    display: block !important;
+}
+
+.head_li li {
+    padding: 10px 0px;
+}
+
+.footer {
+    display: none;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.mobile_footer {
+    background-color: #1D2830;
+    color: white;
+    display: none;
+    display: block;
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .compny_logo {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .compny_logo img {
+        margin: 20px 0px;
+        width: 60%;
+        margin-left: 60px;
+    }
+
+    .border {
+        width: 100%;
+    }
+
+    .time_left {
+        width: 100%;
+    }
+
+    .time_line {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+
+    }
+
+    .time_bottom {
+        border: 1.5px solid gray;
+        /* width: 380px; */
+        height: 290px;
+        padding: 20px;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        background-color: white;
+    }
+
+    .time_right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    .five1 {
+        padding: 15px;
+        background-color: #F6F3FC;
+        border-left: none;
+        border-bottom: 8px solid #794CFF;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .paragraph {
+        border: 1.5px solid gainsboro;
+        padding: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card_2 {
+        display: none;
+
+    }
+
+    .card-body {
+        margin-top: 40px;
+    }
+
+    .show_more {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .show_more button {
+        padding: 20px 80px;
+        background-color: #ECE5FF;
+        color: #794CFF;
+        margin-top: 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-bottom: 50px;
+
+    }
+
+    .we_work {
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px 0px;
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .work_text {
+        text-align: center;
+    }
+
+    .love_text {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .owl_2 {
+        display: none;
+        align-items: center;
+    }
+
+    .playstore {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .play_inner {
+        width: 80%;
+        background-color: #794CFF;
+        padding: 30px 30px;
+        border-radius: 10px;
+
+    }
+
+    .play_inner {
+        width: 100%;
+        background-color: #794CFF;
+        padding: 30px 30px;
+        border-radius: 0px;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app {
+        margin-top: 30px;
+    }
+
+    .app img {
+        margin: 20px 0px
+    }
+
+    ;
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .login {
+        opacity: 1;
+    }
+
+    .save_text {
+        display: block;
+    }
+
+    .des_text {
+        width: 31%;
+    }
+
+    .dashboard {
+        width: 70%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    .mobile_footer {
+        display: none;
+    }
+}
+   </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo"> team.flow</div>
+            <div class="nav">
+                <ul>
+                    <li>How it Works</li>
+                    <li>Product</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                </ul>
+            </div>
+            <div class="login">
+                <div class="login_btn">Log in</div>
+                <div class="getstart_btn">
+                    <button>Get started free</button>
+                </div>
+            </div>
+            <div class="menu"><img src="./menu.svg" alt="">
+                <p>MENU</p>
+            </div>
+
+        </div>
+        <div class="lable">
+
+            <div class="save">
+                <div class="save_text">
+                    Save 90%
+                </div>
+                <div class="get_account">
+                    Get account of $59
+                </div>
+            </div>
+            <div class="info">
+                <di class="info_text_1">
+                    Manage the team
+                </di>
+                <div class="info_text_1">
+                    everyone wants to be on
+                </div>
+            </div>
+            <div class="descreaption">
+                <div class="des_text">
+
+                    Simple platform that lets you master what great managers do best,
+                    as develop trust, collaborate, and drive team performance.
+                </div>
+            </div>
+            <div class="email">
+                <div class="email_text">
+                    name@yourcompany.com
+                </div>
+            </div>
+            <div class="email">
+                <button class="try_it">Try it free</button>
+            </div>
+
+        </div>
+        <div class="dash_main">
+            <div class="dashboard">
+                <img src="../PROJECT-ASSIGNMENT/img/dash.svg" alt="">
+            </div>
+        </div>
+        <div class="trust_text">
+            <p>TRUSTED BY OVER <b> 10.000+ </b>WORLD’S BEST TEAMS</p>
+        </div>
+        <div class="compny_logo">
+            <img src="../PROJECT-ASSIGNMENT/img/google.svg" alt="">
+            <img src="../PROJECT-ASSIGNMENT/img/air.svg" alt="">
+            <img src="../PROJECT-ASSIGNMENT/img/facebook.svg" alt="">
+            <img src="../PROJECT-ASSIGNMENT/img/hubspot.svg" alt="">
+            <img src="../PROJECT-ASSIGNMENT/img/slack.svg" alt="">
+        </div>
+        <div class="time_line">
+            <div class="time_left">
+                <div class="border">
+
+                    <div class="time_text">Timeline</div>
+                    <div class="time_top">
+                        <div class="line">
+                            <img src="../PROJECT-ASSIGNMENT/img/time.svg" alt="">
+                            <div class="d-flex">
+                                <div class="border-side"></div>
+                            </div>
+                            <img src="../PROJECT-ASSIGNMENT/img/ghadi.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <div class="box_text">
+                                Benchmarking
+                            </div>
+                            <div class="tab_text_2">
+                                sent to denish 06/02/2020
+                            </div>
+                            <div class="box_1">
+                                <span style="color: #3B7FF6;"> @Denise</span> Can we add three more <br> analyses?
+                            </div>
+                            <div class="box_1">
+                                <span style="color: #3B7FF6;"> @Denise</span> Create a presentation with <br> comparison
+                                tables
+                            </div>
+                            <div class="box_1">
+                                <span style="color: #3B7FF6;"> @Denise</span> Let's set up a meeting to <br> present to
+                                the product manager.
+                            </div>
+                            <div class="box_text">
+                                Benchmarking
+                            </div>
+                            <div class="tab_text_2">
+                                sent to denish 06/02/2020
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time_bottom">
+                        <div class="lady">
+                            <div class="lady_img">
+                                <img src="../PROJECT-ASSIGNMENT/img/lady.svg" alt="">
+                            </div>
+                            <div class="lady_text">
+                                <div>Denis silve </div>
+                                <div>Product Designer</div>
+                            </div>
+                        </div>
+                        <div class="paragraph">
+                            <span style="color: #3B7FF6;">@Peter</span> Thanks for review! <br>
+                            I will review the comments and submit a <br>
+                            new project.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="time_right">
+                <div class="main_box">
+
+                    <div class="five1">
+                        <div class="sur"> <b> Surve youry team </b></div>
+                        <div class="power">Powerful questions that get to the heart</div>
+                        <div class="how">of how team member really feel.</div>
+                    </div>
+                    <div class="five2">
+                        <div class="sur"> <b> Resolve issues quickly </b></div>
+                        <div class="power">Anonymous messaging that connects</div>
+                        <div class="how">managers and employees.</div>
+                    </div>
+                    <hr>
+                    <div class="five2">
+                        <div class="sur"> <b> Plane your 1-on-1s </b></div>
+                        <div class="power">Plan meetings together and give a stake</div>
+                        <div class="how">employees and teams.</div>
+                    </div>
+                    <hr>
+
+                    <div class="five2">
+                        <div class="sur"> <b> Track your progress </b></div>
+                        <div class="power">Easy-to-read reports and sharable </div>
+                        <div class="how"> results help managers and teams.</div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+        <div class="make_your">
+            <div class="mek_work">
+                Make your work easier
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <img src="../PROJECT-ASSIGNMENT/img/team.svg" alt="">
+                <h3>Team Surveys & Reports</h3>
+                <p>Short, anonymous surveys track your <br> team’s needs weekly so you can focus.</p>
+            </div>
+            <div class="card-body">
+                <img src="../PROJECT-ASSIGNMENT/img/team_second (1).svg" alt="">
+                <h3>Collaborative 1:1 </h3>
+                <p>Build relationships by planning <br>
+                    1-on-1s and start meetings.</p>
+            </div>
+            <div class="card-body">
+                <img src="../PROJECT-ASSIGNMENT/img/team_third.svg" alt="">
+                <h3>Learning Center</h3>
+                <p>Quickly get solutions tailored to your <br> personal challenges from the manager.</p>
+            </div>
+        </div>
+        <div class="card_2">
+            <div class="card-body">
+                <img src="../PROJECT-ASSIGNMENT/img/team_fourth.svg" alt="">
+                <h3>Anonymous Messaging</h3>
+                <p>Develop trust in a safe channel for <br> important conversations.</p>
+            </div>
+            <div class="card-body">
+                <img src="../PROJECT-ASSIGNMENT/img/team_fifth.svg" alt="">
+                <h3>Conversation Engine </h3>
+                <p>Communicate confidently with <br>
+                    recommended talking points.</p>
+            </div>
+            <div class="card-body">
+                <img src="../PROJECT-ASSIGNMENT/img/team_six.svg" alt="">
+                <h3>Exclusives Manager</h3>
+                <p>Access manager tips, activities and <br>
+                    best practices from our team of experts.</p>
+            </div>
+        </div>
+        <div class="show_more">
+            <button>View more benefits</button>
+        </div>
+        <div class="we_work">
+            <div class="work_text">
+                <h1>We work how you <br>
+                    work everyday</h1>
+                <div>
+                    Since the easiest things to use actually get used, we <br> adapts to the way your team works – not
+                    the other <br> way around.
+                </div>
+                <button>Grt started free</button>
+            </div>
+            <div class="work_img">
+                <img src="../PROJECT-ASSIGNMENT/img/single_chart.svg" alt="">
+            </div>
+        </div>
+        <div class="customer_love">
+            <div class="heading">
+                Why customers love <br>
+                working with us
+            </div>
+            <div class="love_text">
+                “It's amazing what has helped me learn about my team. <br>
+                I don't worry about blindspots anymore, and 1-on-1s have never <br>
+                been more productive. The team loves it.”
+            </div>
+        </div>
+        <div class="owl">
+            <div class="owl_1 brdr">
+                <img src="../PROJECT-ASSIGNMENT/img/men_1.svg" alt="">
+                <div class="for_mergin">
+                    <div style="font-weight: 700;">
+                        Jorge Robertson
+                    </div>
+                    <div style="color: #4E5A65;">
+                        CS at Google
+                    </div>
+                </div>
+            </div>
+            <div class="owl_2  ">
+                <img src="../PROJECT-ASSIGNMENT/img/men_2.svg" alt="">
+                <div class="for_mergin">
+                    <div style="font-weight: 700;">
+                        Jorge Robertson
+                    </div>
+                    <div style="color: #4E5A65;">
+                        CS at Google
+                    </div>
+                </div>
+            </div>
+            <div class="owl_2">
+                <img src="../PROJECT-ASSIGNMENT/img/men_3.svg" alt="">
+                <div class="for_mergin">
+                    <div style="font-weight: 700;">
+                        Jorge Robertson
+                    </div>
+                    <div style="color: #4E5A65;">
+                        CS at Google
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="playstore">
+            <div class="play_inner">
+                <div>
+                    84% of employees who use <br>
+                    trust their direct manager
+                </div>
+                <div class="app">
+                    <img src="../PROJECT-ASSIGNMENT/img/playstore.svg" alt="">
+                    <img src="../PROJECT-ASSIGNMENT/img/appstore.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="head_li">
+                <li>Company</li>
+                <li>Abot Us</li>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Contact Us</li>
+            </ul>
+            <ul class="head_li">
+                <li>Support</li>
+                <li>Help center</li>
+                <li>Sofety center</li>
+                <li>Community</li>
+            </ul>
+            <ul class="head_li">
+                <li>Legel</li>
+                <li>Cookies Policy</li>
+                <li>Privacy Policy</li>
+                <li>Team of Servce</li>
+            </ul>
+            <ul class="head_li">
+                <li>Install app</li>
+                <li>
+                    <img src="../PROJECT-ASSIGNMENT/img/play_black.svg" alt="">
+                </li>
+                <li>
+                    <img src="../PROJECT-ASSIGNMENT/img/app_black.svg" alt="">
+                </li>
+            </ul>
+
+        </div>
+        <div class="mobile_footer">
+            <div class="div">
+                <p>Company</p>
+                <img src="../PROJECT-ASSIGNMENT/img/down.svg" alt="">
+            </div>
+            <div class="div">
+                <p>Support</p>
+                <img src="../PROJECT-ASSIGNMENT/img/down.svg" alt="">
+            </div>
+            <div class="div">
+                <p>Legal</p>
+                <img src="../PROJECT-ASSIGNMENT/img/down.svg" alt="">
+            </div>
+            <div class="div">
+                <p>Install app</p>
+                <img src="../PROJECT-ASSIGNMENT/img/down.svg" alt="">
+            </div>
+            <div style="padding-left: 20px;padding-bottom: 20px;padding-top: 20px;">
+                <img src="../PROJECT-ASSIGNMENT/img/play_black.svg" alt="">
+
+            </div>
+            <div style="padding-left: 20px;padding-bottom: 20px;">
+
+                <img src="../PROJECT-ASSIGNMENT/img/app_black.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
